@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>駒込スポーツ整骨院</title>
+    <!-- 通常のCSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- レスポンシブCSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" media="screen and (max-width: 1280px)">
+    <!-- フォント -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="status-bar"></div>
+    <header>
+        <div class="custom-header">
+            <img src="assets/images/kfcg_logo 1.png" alt="header-logo" class="header-logo">
+        </div>
+        <div class="header-icons">
+            <div class="line-link">
+                <!-- LINEアイコン-->
+                <a href=" ラインのリンク ">
+                    <img src="assets/Link/LINE_Brand_icon 5.png" alt="line-icon" class="line-icon">
+                </a> 
+
+                <!-- 問い合わせリンク -->
+                <a href=" " class="toiawase-button">問い合わせる</a>
+            </div>
+            <div class="yoyaku-link">
+                <!-- 予約ボタン -->
+                <a href=" " class="yoyaku-button">予約する</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <!-- スライドのテキスト -->
+        <div class="text-content">
+            <h1>Your Lifetime Partner
+            <br>for Health and Sports</h1>
+            <h3>怪我の治療から再発予防、健康増進までを全面的にサポートします。私たちはクライアントさまの目線に立ち、質の高いサービスでスポーツを楽しむ人生を生涯支えます。</h3>
+            <div class="hero-yoyaku-link">
+                <a href=" " class="hero-yoyaku-button">予約する</a>
+            </div>
+        </div>
+        <!-- スライダーのコンテナ -->
+        <div class="slider">
+            <div class="slides">
+                <!-- 1枚目のスライド -->
+                <div class="slide">
+                    <img src="assets/images/DSC_0995.JPG" rel="hero-image" alt="Slide 1" calss="hero-image">
+                </div>
+                <!-- 2枚目のスライド -->
+                <div class="slide">
+                    <img src="assets/images/DSC_0996.JPG" rel="hero-image" alt="Slide 2" calss="hero-image">
+                </div>
+                <!-- 3枚目のスライド -->
+                <div class="slide">
+                    <img src="assets/images/DSC_0997.JPG" rel="hero-image" alt="Slide 3" calss="hero-image">
+                </div>
+            </div>
+
+            <button class="arrow-prev" onclick="moveSlider(-1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="19.5" stroke="white"/>
+                    <path d="M24 12L16 20L24 28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            
+            <button class="arrow-next" onclick="moveSlider(1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="19.5" stroke="white"/>
+                    <path d="M24 12L16 20L24 28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="rotate(180 20 20)"/>
+                </svg>
+            </button>
+            
+            <!-- インジケーターの丸 -->
+            <div class="indicators">
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+        </div>
+    </section>
+    <section class="frame">
+        <!-- サービス紹介 -->
+        <section class="service">
+            <div class="service-content">
+                <h2>サービス紹介</h2>
+                <h3>当施設では、保険診療からスポーツマッサージ、フィジカルアセスメント、パーソナルトレーニングまで、幅広いサービスでクライアントさまの健康とスポーツパフォーマンスをサポートします。一人ひとりのニーズに合わせた丁寧なケアと質の高いサービスをご提供します。</h3>
+            </div>
+            <div class="service-manu">
+                <div class="service1">
+                    <dive class="menu-name">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect width="24" height="24" fill="none"/>
+                            <path d="M10.5 17H13.5V13.5H17V10.5H13.5V7H10.5V10.5H7V13.5H10.5V17ZM5 21C4.45 21 3.97917 20.8042 3.5875 20.4125C3.19583 20.0208 3 19.55 3 19V5C3 4.45 3.19583 3.97917 3.5875 3.5875C3.97917 3.19583 4.45 3 5 3H19C19.55 3 20.0208 3.19583 20.4125 3.5875C20.8042 3.97917 21 4.45 21 5V19C21 19.55 20.8042 20.0208 20.4125 20.4125C20.0208 20.8042 19.55 21 19 21H5ZM5 19H19V5H5V19Z" fill="#B5D681"/>
+                        </svg>
+                        <h4>保険診療</h4>
+                        <p>骨折、脱臼、捻挫、打撲などの急性外傷を対象とした診療</p>
+                    </dive>
+                    <hr>
+                    <div class="price-section">
+                        <div class="price-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <rect width="20" height="20" fill="none"/>
+                                <path d="M9.25 17V14H5.5V12.5H9.25V11H5.5V9.5H8.70833L4.5 3H6.29167L10 8.75L13.7083 3H15.5L11.2917 9.5H14.5V11H10.75V12.5H14.5V14H10.75V17H9.25Z" fill="#333333"/>
+                            </svg>
+                            <p>料金（税込）</p>
+                        </div>
+                        <p class="hokentekiyo">保険適用（負担割合や部位数により異ります。）</p>
+                        <p class="comment">※保険適用外の場合も、お気軽にLINEでお問い合わせください。</p>
+                    </div>
+                </div>
+                <div class="service2">
+                    <div class="menu-name">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M9 14V7H18C19.1 7 20.0417 7.39167 20.825 8.175C21.6083 8.95833 22 9.9 22 11V14H9ZM2 17V15H22V17H2ZM5 14C4.16667 14 3.45833 13.7083 2.875 13.125C2.29167 12.5417 2 11.8333 2 11C2 10.1667 2.29167 9.45833 2.875 8.875C3.45833 8.29167 4.16667 8 5 8C5.83333 8 6.54167 8.29167 7.125 8.875C7.70833 9.45833 8 10.1667 8 11C8 11.8333 7.70833 12.5417 7.125 13.125C6.54167 13.7083 5.83333 14 5 14ZM5 12C5.28333 12 5.52083 11.9042 5.7125 11.7125C5.90417 11.5208 6 11.2833 6 11C6 10.7167 5.90417 10.4792 5.7125 10.2875C5.52083 10.0958 5.28333 10 5 10C4.71667 10 4.47917 10.0958 4.2875 10.2875C4.09583 10.4792 4 10.7167 4 11C4 11.2833 4.09583 11.5208 4.2875 11.7125C4.47917 11.9042 4.71667 12 5 12ZM11 12H20V11C20 10.45 19.8042 9.97917 19.4125 9.5875C19.0208 9.19583 18.55 9 18 9H11V12Z" fill="#B5D681"/>
+                        </svg>
+                        <h4>スポーツマッサージ</h4>
+                        <p>筋肉疲労の軽減、スポーツ後のリカバリー、リフレッシュのためのマッサージ</p>
+                    </div>
+                    <hr>
+                    <div class="price-section">
+                        <div class="price-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <rect width="20" height="20" fill="none"/>
+                                <path d="M9.25 17V14H5.5V12.5H9.25V11H5.5V9.5H8.70833L4.5 3H6.29167L10 8.75L13.7083 3H15.5L11.2917 9.5H14.5V11H10.75V12.5H14.5V14H10.75V17H9.25Z" fill="#333333"/>
+                            </svg>
+                            <p>料金（税込）</p>
+                        </div>
+                        <ul class="price-list">
+                            <li><span>30分</span> <span class="price">5,500円</span></li>
+                            <li><span>45分</span> <span class="price">8,250円</span></li>
+                            <li><span>60分</span> <span class="price">11,000円</span></li>
+                        </ul>
+                        <p class="comment">※15分単位（2,750円）での延長も可能です。</p>
+                    </div>
+                </div>
+                <div class="service3">
+                    <div class="menu-name">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M10 6C9.45 6 8.97917 5.80417 8.5875 5.4125C8.19583 5.02083 8 4.55 8 4C8 3.45 8.19583 2.97917 8.5875 2.5875C8.97917 2.19583 9.45 2 10 2C10.55 2 11.0208 2.19583 11.4125 2.5875C11.8042 2.97917 12 3.45 12 4C12 4.55 11.8042 5.02083 11.4125 5.4125C11.0208 5.80417 10.55 6 10 6ZM16.5 18C17.2 18 17.7917 17.7583 18.275 17.275C18.7583 16.7917 19 16.2 19 15.5C19 14.8 18.7583 14.2083 18.275 13.725C17.7917 13.2417 17.2 13 16.5 13C15.8 13 15.2083 13.2417 14.725 13.725C14.2417 14.2083 14 14.8 14 15.5C14 16.2 14.2417 16.7917 14.725 17.275C15.2083 17.7583 15.8 18 16.5 18ZM21.6 22L18.9 19.3C18.5333 19.5333 18.15 19.7083 17.75 19.825C17.35 19.9417 16.9333 20 16.5 20C15.25 20 14.1875 19.5625 13.3125 18.6875C12.4375 17.8125 12 16.75 12 15.5C12 14.25 12.4375 13.1875 13.3125 12.3125C14.1875 11.4375 15.25 11 16.5 11C17.75 11 18.8125 11.4375 19.6875 12.3125C20.5625 13.1875 21 14.25 21 15.5C21 15.9333 20.9417 16.35 20.825 16.75C20.7083 17.15 20.5333 17.5333 20.3 17.9L23 20.6L21.6 22ZM11 22V18.975C11.25 19.375 11.5458 19.7417 11.8875 20.075C12.2292 20.4083 12.6 20.7083 13 20.975V22H11ZM7 22V9C5.98333 8.91667 4.975 8.79583 3.975 8.6375C2.975 8.47917 1.98333 8.26667 1 8L1.5 6C2.9 6.38333 4.30417 6.64583 5.7125 6.7875C7.12083 6.92917 8.55 7 10 7C11.45 7 12.8792 6.92917 14.2875 6.7875C15.6958 6.64583 17.1 6.38333 18.5 6L19 8C18.0167 8.26667 17.025 8.47917 16.025 8.6375C15.025 8.79583 14.0167 8.91667 13 9V10.025C12.1 10.6083 11.375 11.3792 10.825 12.3375C10.275 13.2958 10 14.35 10 15.5V15.75C10 15.8333 10.0083 15.9167 10.025 16H9V22H7Z" fill="#B5D681"/>
+                        </svg>
+                        <h4>フィジカルアセスメント</h4>
+                        <p>関節や筋肉、呼吸機能、動作パターンなどを測定し、身体的な課題と改善方法を提案する「身体の健康診断」</p>
+                    </div>
+                    <hr>
+                    <div class="price-section">
+                        <div class="price-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <rect width="20" height="20" fill="none"/>
+                                <path d="M9.25 17V14H5.5V12.5H9.25V11H5.5V9.5H8.70833L4.5 3H6.29167L10 8.75L13.7083 3H15.5L11.2917 9.5H14.5V11H10.75V12.5H14.5V14H10.75V17H9.25Z" fill="#333333"/>
+                            </svg>
+                            <p>料金（税込）</p>
+                        </div>
+                        <ul class="price-list">
+                            <li><span>60分</span> <span class="price">11,000円</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service4">
+                    <div class="menu-name">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M13.4 21.9001L12 20.5001L15.55 16.9501L7.04998 8.4501L3.49998 12.0001L2.09998 10.6001L3.49998 9.1501L2.09998 7.7501L4.19998 5.6501L2.79998 4.2001L4.19998 2.8001L5.64998 4.2001L7.74998 2.1001L9.14998 3.5001L10.6 2.1001L12 3.5001L8.44998 7.0501L16.95 15.5501L20.5 12.0001L21.9 13.4001L20.5 14.8501L21.9 16.2501L19.8 18.3501L21.2 19.8001L19.8 21.2001L18.35 19.8001L16.25 21.9001L14.85 20.5001L13.4 21.9001Z" fill="#B5D681"/>
+                        </svg>
+                        <h4>パーソナルトレーニング</h4>
+                        <p>慢性的な運動器疾患の改善、スポーツパフォーマンス向上、怪我の再発予防を目的としたトレーニング</p>
+                    </div>
+                    <hr>
+                    <div class="price-section">
+                        <div class="price-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <rect width="20" height="20" fill="none"/>
+                                <path d="M9.25 17V14H5.5V12.5H9.25V11H5.5V9.5H8.70833L4.5 3H6.29167L10 8.75L13.7083 3H15.5L11.2917 9.5H14.5V11H10.75V12.5H14.5V14H10.75V17H9.25Z" fill="#333333"/>
+                            </svg>
+                            <p>料金（税込）</p>
+                        </div>
+                        <ul class="price-list">
+                            <li><span>60分</span> <span class="price">11,000円</span></li>
+                        </ul>
+                        <p class="comment">※15分単位（2,750円）での延長も可能です。</p>
+                    </div>
+                </div>
+                <p>※スポーツマッサージとパーソナルトレーニングにご利用いただけるお得な回数券をご用意しています。ご希望の方はお気軽にお申し付けください。</p>
+            </div>
+        </section>
+        <!-- パーソナルトレーニング -->
+        <section class="personal">
+            <div class="personal-content">
+                <img src="assets/images/DSC_0986.JPG">
+                <div class="Personal-text">
+                    <h2>ベストパフォーマンスを引き出すパーソナルトレーニング</h2>
+                    <h3>当施設のパーソナルトレーニングは、スポーツドクターとの連携により、クライアントさま一人ひとりに合わせたオーダーメイドのプログラムを提供しています。慢性的な運動器疾患の改善、スポーツパフォーマンス向上、怪我の再発予防を目的に、状態に合わせたトレーニングで生涯にわたる健康とスポーツをサポートします。</h3>
+                </div>
+            </div>
+            <div class="premium-content">
+                <div class="premium-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 22V11H2V5H7.2C7.11667 4.85 7.0625 4.69167 7.0375 4.525C7.0125 4.35833 7 4.18333 7 4C7 3.16667 7.29167 2.45833 7.875 1.875C8.45833 1.29167 9.16667 1 10 1C10.3833 1 10.7417 1.07083 11.075 1.2125C11.4083 1.35417 11.7167 1.55 12 1.8C12.2833 1.53333 12.5917 1.33333 12.925 1.2C13.2583 1.06667 13.6167 1 14 1C14.8333 1 15.5417 1.29167 16.125 1.875C16.7083 2.45833 17 3.16667 17 4C17 4.18333 16.9833 4.35417 16.95 4.5125C16.9167 4.67083 16.8667 4.83333 16.8 5H22V11H20V22H4ZM14 3C13.7167 3 13.4792 3.09583 13.2875 3.2875C13.0958 3.47917 13 3.71667 13 4C13 4.28333 13.0958 4.52083 13.2875 4.7125C13.4792 4.90417 13.7167 5 14 5C14.2833 5 14.5208 4.90417 14.7125 4.7125C14.9042 4.52083 15 4.28333 15 4C15 3.71667 14.9042 3.47917 14.7125 3.2875C14.5208 3.09583 14.2833 3 14 3ZM9 4C9 4.28333 9.09583 4.52083 9.2875 4.7125C9.47917 4.90417 9.71667 5 10 5C10.2833 5 10.5208 4.90417 10.7125 4.7125C10.9042 4.52083 11 4.28333 11 4C11 3.71667 10.9042 3.47917 10.7125 3.2875C10.5208 3.09583 10.2833 3 10 3C9.71667 3 9.47917 3.09583 9.2875 3.2875C9.09583 3.47917 9 3.71667 9 4ZM4 7V9H11V7H4ZM11 20V11H6V20H11ZM13 20H18V11H13V20ZM20 9V7H13V9H20Z" fill="#B5D681"/>
+                    </svg>
+                    <h4>初めての方へ特別な体験プラン</h4>
+                    <p>「フィジカルアセスメント」と「パーソナルトレーニング」の2つを体験できるお得なプランをご用意しました。それぞれ60分のセッションで、身体の課題を把握し、改善のための具体的な方法を体感していただけます。</p>
+                </div>
+                <hr>
+                <div class="pre-price-section">
+                    <div class="price-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <rect width="20" height="20" fill="none"/>
+                            <path d="M9.25 17V14H5.5V12.5H9.25V11H5.5V9.5H8.70833L4.5 3H6.29167L10 8.75L13.7083 3H15.5L11.2917 9.5H14.5V11H10.75V12.5H14.5V14H10.75V17H9.25Z" fill="#333333"/>
+                        </svg>
+                        <p>料金（税込）</p>
+                    </div>
+                    <ul class="price-list">
+                        <li><span>60分×2セッション</span> <span class="price">10,000円</span></li>
+                    </ul>
+                    <p class="comment">※各セッションは別日での実施となります。</p>
+                </div>
+                <div class="puremium-link">
+                    <!-- 体験プラン予約ボタン -->
+                    <a href=" " class="taiken-button">初回体験プランを予約する</a>
+                </div>
+            </div>
+        </section>
+        <section class="facility">
+            <div class="facility-content">
+                <div class="text">
+
+                </div>
+                <div class="gallery">
+                    <h2>施設・機器の案内</h2>
+                    <h3>当施設では、最新の設備と専門機器を用いたサポートを提供しています。治療やリハビリ、フィットネス向けのトレーニングエリアに至るまで、クライアントさま一人ひとりに最適な環境で、安心してトレーニングやケアを受けていただけます。</h3>
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <script src="assets/javascript/slider.js"></script>
+</body>
+</html>

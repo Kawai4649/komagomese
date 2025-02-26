@@ -1,0 +1,487 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+/* ステータスバー */
+.status-bar {
+    width: 100%;
+    height: 32px;
+}
+/* ヘッダー */
+header {
+    display: flex;
+    width: 100%;
+    padding: 12px 120px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(0deg, var(--Surface-Tint-Low, rgba(15, 74, 42, 0.02)) 0%, var(--Surface-Tint-Low, rgba(15, 74, 42, 0.02)) 100%), #FFF;
+}
+.custom-header {
+    display: flex;
+    width: 124px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.header-logo {
+    width: 124px;
+    height: 48px;
+    flex-shrink: 0;
+    background: linear-gradient(0deg, var(--Surface-Tint-Low, rgba(15, 74, 42, 0.02)) 0%, var(--Surface-Tint-Low, rgba(15, 74, 42, 0.02)) 100%), #FFF;
+}
+.header-icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+}
+.line-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.line-icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.toiawase-button {
+    display: flex;
+    width: 84px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    color: var(--Link-Primary, #333);
+    font-feature-settings: 'dlig' on;
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+.yoyaku-link {
+    display: flex;
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+}
+.yoyaku-button {
+    padding: 10px 24px;
+    background: var(--Button-Filled-Background, #0F4A2A);
+    color: var(--Button-White-Text, #FFF);
+    border-radius: 100px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+.yoyaku-button:hover {
+    background-color: #115535; 
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+}
+.yoyaku-button:focus {
+    border-radius: 100px;
+    background: var(--Button-Filled-Background, #0F4A2A);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+    outline: none;
+}
+.yoyaku-button:active {
+    border-radius: 100px;
+    background: #092D1B;  
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15);
+}
+/* 「予約する」ボタン非活性 */
+.yoyaku-button:disabled {
+    border-radius: 100px;
+    background: var(--Gray-40, #CCC);
+}
+/* ヒーローセクション */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 996px;
+}
+.text-content {
+    position: absolute;
+    top: 42%;
+    left: 30%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: transparent;
+    max-width: 681px;
+    gap: 32px;
+    z-index: 10; 
+}
+.text-content h1 {
+    color: #FFF;
+    font-feature-settings: 'dlig' on;
+    font-family: "Roboto Slab";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+    text-align: left;
+    margin-bottom: 16px;
+}
+.text-content h3 {
+    color: #FFF;
+    font-feature-settings: 'dlig' on;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    text-align: left;
+    margin-bottom: 32px;
+}
+.hero-yoyaku-link {
+    display: flex;
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    text-align: left;
+}
+.hero-yoyaku-button {
+    padding: 10px 24px;
+    background: transparent;
+    color: #FFF;
+    border-radius: 100px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 996px;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: transform 1.0s ease-in-out;
+}
+.slide {
+    flex: 0 0 100%;
+    height: 996px;
+}
+.slide img {
+    width: 100%;
+    height: 996px;
+    object-fit: cover;
+}
+/* 矢印ボタンのスタイル */
+.arrow-prev,
+.arrow-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+.arrow-prev {
+    left: 5%;
+}
+.arrow-next {
+    right: 5%;
+}
+/* インジケーター */
+.indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+.indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #FFFFFF80;
+    transition: background-color 1.0s ease;
+}
+.indicator.active {
+    background-color: white; 
+}
+/* サービス紹介 */
+.service {
+    width: 100%;
+    padding: 80px 120px;
+    background: var(--Background-Green, #EFF3EC);
+}
+.service-content {
+    width: 40%;
+    height: auto;
+    margin-bottom: 48px;
+}
+.service-content h2 {
+    color: var(--Text-Primary, #333);
+    font-feature-settings: 'dlig' on;
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+.service-content h3 {
+    color: var(--Text-Secondary, #4A4A4A);
+    font-feature-settings: 'dlig' on;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.frame {
+    gap: 80px;
+}
+/* サービス紹介_メニュー */
+.service-manu {
+    display: flex;
+    justify-content: space-between; 
+    column-gap: 32px;
+    row-gap: 32px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.service1, .service2, .service3, .service4 {
+    width: calc(25% - 24px);
+    min-height: 372px;
+    align-items: stretch;
+    border-radius: 6px;
+    background: linear-gradient(0deg, var(--Surface-Tint-Low, rgba(15, 74, 42, 0.02)) 0%, var(--Surface-Tint-Low, rgba(15, 74, 42, 0.02)) 100%), #FFF;
+    padding: 32px 24px;
+    box-sizing: border-box;
+    gap: 24px;
+}
+.menu-name {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+h4 {
+    margin: 0;
+    color: var(--Text-Primary, #333);
+    font-feature-settings: 'dlig' on;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+.menu-name p {
+    align-items: stretch;
+    min-height: 60px;
+}
+hr {
+    width: 98%;
+    height: 1px;
+    background: var(--Gray-40, #CCC);
+    margin: 0;
+}
+.price-section {
+    display: flex;
+    min-height: 136px;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 24px;
+}
+.price-header {
+    display: flex;
+}
+.price-header svg {
+    margin-right: 8px;
+}
+p {
+    margin: 0;
+    color: var(--Text-Secondary, #4A4A4A);
+    font-feature-settings: 'dlig' on;
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.hokentekiyo {
+    margin-top: 8px;
+}
+.price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.price-list li span:first-child {
+    text-align: left;
+}
+.price-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--Text-Secondary, #4A4A4A);
+    font-feature-settings: 'dlig' on;
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 8px;
+}
+.price {
+    text-align: right;
+    flex-grow: 1;
+}
+.comment {
+    margin-top: 12px;
+}
+/* パーソナルトレーニング */
+.personal {
+    display: flex;
+    align-items: center;
+    padding: 80px 120px;
+    gap: 32px; 
+}
+.personal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    min-width: 967px;
+    justify-content: space-between;
+    flex: 1;
+}
+.personal-content img {
+    height: 552px;
+    align-self: stretch;
+    max-width: 967px;
+    object-fit: cover;
+    border-radius: 6px;
+    background: lightgray 50% / cover no-repeat;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+}
+.Personal-text h2 {
+    color: var(--Text-Primary, #333);
+    font-feature-settings: 'dlig' on;
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0;
+}
+.Personal-text h3 {
+    color: var(--Text-Secondary, #4A4A4A);
+    font-feature-settings: 'dlig' on;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.premium-content {
+    display: flex;
+    min-height: 380px;
+    padding: 32px 24px;
+    align-items: center;
+    gap: 24px;
+    flex-direction: column;
+    border-radius: 6px;
+    background: linear-gradient(0deg, var(--Surface-Tint-Low, rgba(15, 74, 42, 0.02)) 0%, var(--Surface-Tint-Low, rgba(15, 74, 42, 0.02)) 100%), #FFF;
+    align-self: center;
+}
+.premium-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+.pre-price-section {
+    width: 100%;
+}
+.pre-price-section ul {
+    margin-top: 8px;
+}
+.commet {
+    margin-top: 12px;
+}
+.puremium-link {
+    width: 100%;
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    border-radius: 100px;
+}
+.taiken-button {
+    padding: 10px 24px;
+    color: var(--Button-White-Text, #FFF);
+    text-align: center;
+    font-feature-settings: 'dlig' on;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+    background: var(--Button-Filled-Background, #0F4A2A);
+    border-radius: 100px;
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-decoration: none;
+}
+.taiken-button:hover {
+    background-color: #115535; 
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+}
+.taiken-button:focus {
+    border-radius: 100px;
+    background: var(--Button-Filled-Background, #0F4A2A);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+    outline: none;
+}
+.taiken-button:active {
+    border-radius: 100px;
+    background: #092D1B;  
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15);
+}
